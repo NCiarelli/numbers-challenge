@@ -1,0 +1,19 @@
+<h1>Numbers Challenge!</h1>
+<form #form=ngForm (ngSubmit)="onSubmit(form.value.nums)">
+  <textarea name="nums" id="nums" cols="30" rows="10" placeholder="Type numbers here separated by spaces"
+    ngModel></textarea>
+  <button type="submit">Calculate Stuff!</button>
+</form>
+<h2>Minimum</h2>
+<p>{{min}}</p>
+<h2>Maximum</h2>
+<p>{{max}}</p>
+<h2>Total Sum</h2>
+<p>{{sum}}</p>
+<h2>Mean</h2>
+<p>{{mean}}</p>
+<h2>Median</h2>
+<p>{{median}}</p>
+<h2>Modes</h2>
+<p>{{mode}}</p>
+<h2>Histogram</h2>
